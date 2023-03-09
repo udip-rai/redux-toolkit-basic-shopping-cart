@@ -16,7 +16,7 @@ export default function Navbar() {
 
   useEffect(() => {
     dispatch(getCartTotal())
-  }, [cart])
+  }, [dispatch, cart])
 
 
   return (

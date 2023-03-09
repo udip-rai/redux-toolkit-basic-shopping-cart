@@ -22,3 +22,4 @@
 - git commit -m "00 - Default Commit - Initialize project using Create React App"
 - git commit -m "01 - Redux Toolkit practice"
 - git commit -m "02 - Deployed to Netlify"
+- git commit -m "03 - Solved Netlify deployment issues"

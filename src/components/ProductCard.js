@@ -29,9 +29,7 @@ export default function ProductCard() {
             <MDBCard>
               <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                 <MDBCardImage src={item.img} fluid alt={item.title} />
-                <a>
-                  <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-                </a>
+                <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
               </MDBRipple>
               <MDBCardBody>
                 <MDBCardTitle>{item.title}</MDBCardTitle>

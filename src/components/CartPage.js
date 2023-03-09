@@ -10,7 +10,7 @@ export const CartPage = () => {
 
   useEffect(() => {
     dispatch(getCartTotal());
-  }, [cart])
+  }, [dispatch, cart])
 
 
   return <section className="h-100 gradient-custom">
@@ -22,7 +22,6 @@ export const CartPage = () => {
               <h5 className="mb-0">Cart - {cart.length} items</h5>
             </div>
             <div className="card-body">
-
               {
                 cart.map((item) =>
                   <div key={item.id} className="row">
@@ -63,7 +62,7 @@ export const CartPage = () => {
                       </div>
 
                       <p className="text-start text-md-center">
-                        <strong>$17.99</strong>
+                        <strong>$ {item.price}</strong>
                       </p>
                     </div>
                   </div>
