@@ -9,7 +9,6 @@ import {
   MDBContainer,
   MDBRow,
   MDBCol,
-  MDBRipple
 } from 'mdb-react-ui-kit';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../features/cartSlice';
@@ -21,16 +20,15 @@ export default function ProductCard() {
 
   return (
 
-    <MDBContainer>
+    <MDBContainer className='py-4'>
       <MDBRow className="mb-3">
 
         {allCarts.items.map((item) =>
-          <MDBCol key={item.id + item.price} size="4">
+          <MDBCol key={item.id + item.price} size="4" className='py-4 text-center'>
             <MDBCard>
-              <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                <MDBCardImage src={item.img} fluid alt={item.title} />
-                <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-              </MDBRipple>
+              <div className="text-center py-4">
+                <MDBCardImage src={item.img} alt={item.title} width="200px" height="200px" objectFit="contain" className='text-center' />
+              </div>
               <MDBCardBody>
                 <MDBCardTitle>{item.title}</MDBCardTitle>
                 <MDBCardText>

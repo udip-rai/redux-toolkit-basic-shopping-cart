@@ -23,3 +23,4 @@
 - git commit -m "01 - Redux Toolkit practice"
 - git commit -m "02 - Deployed to Netlify"
 - git commit -m "03 - Solved Netlify deployment issues"
+- git commit -m "04 - Changed some css stylings"
