@@ -27,7 +27,7 @@ export default function ProductCard() {
           <MDBCol key={item.id + item.price} size="4" className='py-4 text-center'>
             <MDBCard>
               <div className="text-center py-4">
-                <MDBCardImage src={item.img} alt={item.title} width="200px" height="200px" objectFit="contain" className='text-center' />
+                <MDBCardImage src={item.img} alt={item.title} width="200px" height="200px" className='text-center' />
               </div>
               <MDBCardBody>
                 <MDBCardTitle>{item.title}</MDBCardTitle>

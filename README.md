@@ -24,3 +24,6 @@
 - git commit -m "02 - Deployed to Netlify"
 - git commit -m "03 - Solved Netlify deployment issues"
 - git commit -m "04 - Changed some css stylings"
+- git commit -m "05 - Added a link to Tutorials page"
+- git commit -m "06 - Modified the nav-link to Porfolio page"
+- git commit -m "07 - Modified the nav-link to Porfolio page"
